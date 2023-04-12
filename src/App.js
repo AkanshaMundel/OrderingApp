@@ -17,15 +17,15 @@ const hiddenCartHandler =() =>{
   return (
   //  <Fragment >
   <CartProvider> 
-   { cartIsShown && <Cart  onClose={hiddenCartHandler}/>}
-    <Header onShowCart= {showCartHandler} />
+    { cartIsShown && <Cart  onClose={hiddenCartHandler}/>}
+   <Header onShowCart= {showCartHandler} />
     <main>
        <Meals />
     </main>
    </CartProvider>
    
-  )
-};
+  );
+}
 
 export default App;
 

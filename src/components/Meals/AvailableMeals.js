@@ -30,7 +30,7 @@ const DUMMY_MEALS = [
       price: 18.99,
     },
   ];
-
+//render the meal
 const AvailableMeals =()=>{
     // const mealsList = DUMMY_MEALS.map(meal=> <li>{meal.name}</li>)
     const mealsList = DUMMY_MEALS.map((meal)=> 
@@ -39,7 +39,7 @@ const AvailableMeals =()=>{
     key = { meal.id} 
     name = {meal.name}  
     description = {meal.description} 
-    pric = {meal.price}/>)
+    price = {meal.price}/>)
  return <section className={classes.meals}>
  <Card>
     <ul>
